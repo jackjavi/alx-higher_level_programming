@@ -2,7 +2,9 @@
 
 def print_reversed_list_integer(my_list=[]):
     """Reverses elements in a list"""
-    length = len(my_list)
+    length = 0
+    for i in my_list:
+        length += 1
     i = 0
     while (i < (length)):
         temp = my_list[i]
