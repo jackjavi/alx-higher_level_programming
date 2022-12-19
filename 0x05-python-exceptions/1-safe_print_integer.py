@@ -4,14 +4,14 @@ def safe_print_integer(value):
     """prints an integer with "{:d}".format().
 
     Args:
-        value: value of any type
+        value: The integer to print
 
     Returns:
         Returns True if value has been correctly printed
-        Otherwise, returns False
+        Otherwise, returns False if TypeError or ValueError occurs
     """
     try:
         print("{:d}".format(int(value)))
-	return (True)
     except (ValueError, TypeError):
         return (False)
+    return (True)
