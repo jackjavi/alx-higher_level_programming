@@ -3,13 +3,14 @@
 
 
 class Square:
+    """Represent a square."""
+    def __init__(self, size):
     """
     Initialize the square class.
 
     Args:
         size: size of suare.
     """
-    def __init__(self, size):
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
